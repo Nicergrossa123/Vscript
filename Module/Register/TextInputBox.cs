@@ -1,4 +1,4 @@
-/*using GTANetworkAPI;
+using GTANetworkAPI;
 using Nexus.Module.Players.Db;
 using Nexus.Module.Players.Windows;
 using System;
@@ -17,4 +17,3 @@ namespace Nexus
         }
     }
 }
-*/

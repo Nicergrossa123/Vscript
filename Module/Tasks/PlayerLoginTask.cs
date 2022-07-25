@@ -142,14 +142,14 @@ namespace Nexus.Module.Tasks
                 }
                 else
                 {
-                   /* TextInputBoxWindowObject textInputBoxObject = new TextInputBoxWindowObject
+                    TextInputBoxWindowObject textInputBoxObject = new TextInputBoxWindowObject
                     {
                         Title = "Anmeldeformular",
                         Message = "Gebe bitte deinen Benutzernamen ein (Beispiel: Vorname_Nachname). Falls du noch nicht registriert bist, wirst du automatisch registriert.",
                         Callback = "registerUser"
                     };
-                   */
-                   // player.OpenTextInputBox(textInputBoxObject);
+
+                    player.OpenTextInputBox(textInputBoxObject);
                     //GTANetworkAPI.NAPI.Task.Run(() => ComponentManager.Get<TextInputBoxWindow>().Show()(iPlayer, new TextInputBoxWindowObject() { Title = "Kennzeichen", Callback = "SetKennzeichen", Message = "Gib ein Kennzeichen ein (8 Zeichen)" }));
                     //   Random id = new Random();
 

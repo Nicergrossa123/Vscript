@@ -51,7 +51,7 @@ namespace Nexus
                 {
                     if (string.IsNullOrEmpty(response) || response == null)
                     {
-                        iPlayer.SendNewNotification("Geben Sie ein Passwort ein!", title:"SERVER", notificationType:PlayerNotification.NotificationType.SERVER);
+                        iPlayer.SendNewNotification("Geben Sie ein Passwort ein!", title: "SERVER", notificationType: PlayerNotification.NotificationType.SERVER);
                         return;
                     }
 
@@ -115,7 +115,7 @@ namespace Nexus
                              MSG.Money.NotEnoughMoney(price));
                         return;
                     }
-                    
+
                     iPlayer.SendNewNotification(
                   "Sie haben sich " + amount + " ");
                     iPlayer.PlayAnimation(AnimationScenarioType.Animation,
@@ -150,7 +150,7 @@ namespace Nexus
                 return;
             }
         }
-        
+
         public static void SendChatMessageToAll(string command, bool sponly = false)
         {
             var players = Players.Instance.GetValidPlayers();
