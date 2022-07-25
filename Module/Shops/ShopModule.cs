@@ -1,0 +1,26 @@
+﻿using Nexus.Module.Spawners;
+
+namespace Nexus.Module.Shops
+{
+    public class ShopModule : SqlModule<ShopModule, Shop, uint>
+    {
+        protected override string GetQuery()
+        {
+            return "SELECT * FROM `shops` WHERE pos_x != 0 AND pos_y != 0;";
+        }
+
+        private static uint blip = 52;
+        private static int color = 69;
+
+        protected override void OnLoaded()
+        {
+            base.OnLoaded();
+        }
+
+        protected override void OnItemLoaded(Shop u)
+        {
+            if (u.Marker) Main.ServerBlips.Add(Blips.Create(u.Position, "Store", blip, 1.0f, color: color));
+
+        }
+    }
+}

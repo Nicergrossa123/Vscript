@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Nexus": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Paco\\Desktop\\Nexus Roleplay\\backend"
+    }
+  }
+}

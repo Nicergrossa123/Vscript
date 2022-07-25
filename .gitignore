@@ -1,0 +1,23 @@
+# vs
+.vs/
+obj/
+bin/
+types-gt-mp/
+packages/
+
+# intellij
+.idea/
+
+# django
+website/.env/
+*.pyc
+website/database/
+
+.DS_STORE
+*.DotSettings
+
+*.user
+VMP_CNR.csproj
+nexusrp.csproj
+nexusrp.csproj
+*.csproj
