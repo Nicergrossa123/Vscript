@@ -99,8 +99,8 @@ namespace Nexus.Module.Configurations
 
         public string GetMySqlConnectionForum()
         {
-            return
-          "server='176.96.136.51'; uid='" + "Nexusto1_wcf" + "'; pwd='" + "Nv5_08wd" + "'; database='Nexusto1_wcf';max pool size=999;SslMode=none;";
+            return 
+                "server='localhost'; uid='" + "Nexusto1_wcf" + "'; pwd='' ; database='wcf';max pool size=999;SslMode=none;";
         }
 
         public string GetMySqlConnectionWhitelist()
