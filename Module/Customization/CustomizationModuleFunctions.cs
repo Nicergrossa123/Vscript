@@ -345,7 +345,7 @@ namespace Nexus.Module.Customization
                     iPlayer.Player.Freeze(false, true, true);
                 });
 
-              /*  TextInputBoxWindowObject textInputBoxObject = new TextInputBoxWindowObject
+                TextInputBoxWindowObject textInputBoxObject = new TextInputBoxWindowObject
                 {
                     Title = "Einreiseamt-Formular",
                     Message = "Geben Sie ihr Geburtsdatum ein : XX.XX.XXXX Beispiel : 09.12.1997!",
@@ -353,7 +353,7 @@ namespace Nexus.Module.Customization
                 };
                 iPlayer.Player.OpenTextInputBox(textInputBoxObject);
 
-                return;*/
+                return;
             }
             else
             {
