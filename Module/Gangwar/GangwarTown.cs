@@ -133,7 +133,7 @@ namespace Nexus.Module.Gangwar
             }
             
             // Check min 15 Players each team needs
-            if ((gangwarTown.OwnerTeam.Members.Count < 15 || attacker.Team.Members.Count < 15) && !Configurations.Configuration.Instance.DevMode)
+            if ((gangwarTown.OwnerTeam.Members.Count < 2 || attacker.Team.Members.Count < 2) && !Configurations.Configuration.Instance.DevMode)
             {
                 attacker.SendNewNotification("Ein Angriff kann nur bei mindestens 15 Mitgliedern beider Parteien stattfinden!");
                 return;
