@@ -94,7 +94,7 @@ namespace Nexus.Module.Players.Windows
                     ClothModule.SaveCharacter(dbPlayer);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Logger.Crash(e);
             }
@@ -195,7 +195,7 @@ namespace Nexus.Module.Players.Windows
         [RemoteEvent]
         public void requestPlayerClothes(Player Player)
         {
-            try 
+            try
             {
                 Main.m_AsyncThread.AddToAsyncThread(new Task(() =>
                 {
