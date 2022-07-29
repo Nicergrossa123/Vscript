@@ -4182,7 +4182,7 @@ namespace Nexus
                                         price = Convert.ToInt32((discount / 100.0) * price);
                                     }
                                 }
-                                if (price > 50000 && iPlayer.IsHomeless())
+                                if (price > 50000)
                                 {
                                     iPlayer.SendNewNotification("Ohne einen Wohnsitz können Sie dieses Fahrzeug nicht erwerben!");
                                     return;
