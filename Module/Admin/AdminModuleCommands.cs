@@ -5403,7 +5403,7 @@ namespace Nexus.Module.Admin
                 return;
             }
 
-            DialogMigrator.CreateMenu(player, Dialogs.menu_player, "NeXus Team", "Teammitglieder");
+            DialogMigrator.CreateMenu(player, Dialogs.menu_player, "GLMP Team", "Teammitglieder");
 
             DialogMigrator.AddMenuItem(player, Dialogs.menu_player, MSG.General.Close(), "");
             foreach (DbPlayer dbPlayer in Players.Players.Instance.GetValidPlayers().Where(x => x.Rank.Id!=0).OrderByDescending(x => x.Rank.Salary))

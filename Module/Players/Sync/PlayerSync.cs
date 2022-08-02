@@ -198,7 +198,7 @@ namespace Nexus.Module.Players.Sync
             {
                 bankHistories.Add(new Banks.BankHistory.BankHistory
                 {
-                    Name = "Nexus Bonus",
+                    Name = "GLMP Bonus",
                     Value = iPlayer.Rank.Salary
                 });
                 total += iPlayer.Rank.Salary;

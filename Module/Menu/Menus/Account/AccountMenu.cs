@@ -38,7 +38,7 @@ namespace Nexus
                 str2 = Content.General.GetDonorName(iPlayer.donator[0]);
             }
 
-            menu.Add("Nexus: ~b~" + str2, "");
+            menu.Add("GLMP: ~b~" + str2, "");
 
             menu.Add("Bargeld: ~g~" + iPlayer.money[0] + "$", "");
             menu.Add("Wanteds: ~r~" + iPlayer.wanteds[0] + "/59", "");
