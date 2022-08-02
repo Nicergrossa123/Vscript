@@ -55,7 +55,7 @@ namespace Nexus.Module.Tasks
 
                             PlayerLoginDataValidationModule.SyncUserBanToForum(reader.GetInt32("forumid"));
 
-                            player.SendNotification($"Dein NEXUSRP (IC-)Account wurde gesperrt. Melde dich im Teamspeak!");
+                            player.SendNotification($"Dein GLMP (IC-)Account wurde gesperrt. Melde dich im Teamspeak!");
                             player.Kick();
                             return;
                         }
