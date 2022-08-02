@@ -2673,7 +2673,8 @@ namespace Nexus.Module.Admin
 
             var findPlayer = Players.Players.Instance.FindPlayer(command[0], true);
             if (findPlayer == null || !findPlayer.IsValid()) return;
-
+            findPlayer.SendNewNotification($"Sie Werden in wenigen Sekunden vom GameServer gekickt. Grund: {command[1]}", title: "ADMIN", notificationType: PlayerNotification.NotificationType.ADMIN);
+            await Task.Delay(7500);
             await Chats.SendGlobalMessage(dbPlayer.Rank.Name + " " + dbPlayer.Player.Name + " hat " + findPlayer.Player.Name + " vom Server gekickt! (Grund: " + command[1] + ")", COLOR.RED, ICON.GLOB);
             dbPlayer.SendNewNotification($"Sie haben {findPlayer.Player.Name} vom Server gekickt!", title: "ADMIN", notificationType: PlayerNotification.NotificationType.ADMIN);
 
