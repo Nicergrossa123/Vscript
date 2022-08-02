@@ -163,7 +163,7 @@ namespace Nexus.Module.Players.Events
                         iPlayer.Player.TriggerEvent("freezePlayer", false);
                         iPlayer.EinreiseSpawn();
                         iPlayer.SendNewNotification(
-                                        "Willkommen auf GLMP, " + player.Name + "wenn du die Einreise Bestehst haben wir eine kleine Schatzsuche für dich!");
+                                        "Willkommen auf GLMP, " + player.Name + "wenn du die Einreise Bestehst haben wir eine kleine Quest für dich!");
                     });
                 }
                 else if (iPlayer.isInjured())
