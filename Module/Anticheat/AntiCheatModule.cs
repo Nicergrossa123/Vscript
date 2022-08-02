@@ -245,6 +245,10 @@ namespace Nexus.Module.Anticheat
                     Players.Players.Instance.SendMessageToAuthorizedUsers("log", $"DRINGENDER-Anticheat-Verdacht: {dbPlayer.Player.Name} (Einreiseamt ohne Perso verlassen)");
                     Logging.Logger.LogToAcDetections(dbPlayer.Id, Logging.ACTypes.EinreiseAmtVerlassen, $"");
                     dbPlayer.Player.Freeze(true, true, true);
+                    dbPlayer.SendNewNotification("Im Support Einfinden!");
+                    dbPlayer.warns[0] = 3;
+                    dbPlayer.Player.Kick("Cheat Verdacht");
+                    dbPlayer.Player.Kick("");
                 }
             }
         }
