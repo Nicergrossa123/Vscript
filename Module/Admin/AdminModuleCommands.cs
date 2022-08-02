@@ -4464,7 +4464,7 @@ namespace Nexus.Module.Admin
             DBLogging.LogAdminAction(player, dbPlayer.Player.Name, adminLogTypes.perm, "Community-Ausschluss", 0, Devmode);
             dbPlayer.warns[0] = 3;
             SocialBanHandler.Instance.AddEntry(dbPlayer.Player);
-            dbPlayer.Player.SendNotification("Permanenter Ausschluss!");
+            dbPlayer.SendNewNotification("Permanenter Ausschluss!");
             PlayerLoginDataValidationModule.SyncUserBanToForum(dbPlayer.ForumId);
             dbPlayer.Player.Kick("Permanenter Ausschluss!");
             dbPlayer.Player.Kick();
