@@ -57,7 +57,7 @@ namespace Nexus.Module.Einreiseamt
                 {
                     case 2: // Ablehnen
 
-                        foundPlayer.SendNewNotification("Ihnen wurde die Einreise nicht gestattet!");
+                        foundPlayer.SendNewNotification("Ihnen wurde die Einreise nicht gestattet, Willkommen auf GLMP!");
                         foundPlayer.SendNewNotification("Bitte melden Sie sich bei Fragen im Support!");
                         iPlayer.SendNewNotification($"Sie haben {foundPlayer.GetName()} die Einreise verweigert!");
 
