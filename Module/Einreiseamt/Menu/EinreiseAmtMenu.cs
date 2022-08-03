@@ -85,7 +85,7 @@ namespace Nexus.Module.Einreiseamt
                         foundPlayer.SendNewNotification("Ihnen wurde die Einreise gestattet! Viel Spaß auf Nexus!");
                         iPlayer.SendNewNotification($"Sie haben {foundPlayer.GetName()} die Einreise gestattet!");
                         MenuManager.DismissCurrent(iPlayer);
-
+                        foundPlayer.SetData("QuestAn", 1);
                         Logging.Logger.AddToEinreiseLog(iPlayer.Id, foundPlayer.Id, true);
                         ComponentManager.Get<TextInputBoxWindow>().Show()(iPlayer, new TextInputBoxWindowObject() { Title = "Einreiseamt-Formular", Callback = "EinreiseAmtPlayerBirthday", Message = "Geben Sie das Geburtsdatum ein : XX.XX.XXXX Beispiel : 09.12.1997 " });
 
